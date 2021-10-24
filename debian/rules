@@ -1,0 +1,10 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@ --with python3 --buildsystem=pybuild
+
+override_dh_auto_install:
+	dh_auto_install
+	rm -rf debian/woeusb-ng/usr/share/applications/
+	mv debian/woeusb-ng/usr/bin/woeusb debian/woeusb-ng/usr/bin/woeusb-ng
+	mv debian/woeusb-ng/usr/bin/woeusbgui debian/woeusb-ng/usr/bin/woeusbgui-ng

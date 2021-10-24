@@ -1,0 +1,5 @@
+woeusb-ng (0.2.9-1kaisen) kaisen-packages; urgency=medium
+
+  * First packaging for Kaisen Linux
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Sun, 24 Oct 2021 14:49:10 +0200
