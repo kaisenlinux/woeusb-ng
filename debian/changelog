@@ -1,3 +1,11 @@
+woeusb-ng (0.2.12-1kaisen) kaisen-packages; urgency=medium
+
+  * Import the 0.2.12 version
+  * Update the quilt patch
+  * Many improvements of the packaging
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Mon, 20 Mar 2023 02:03:05 +0200
+
 woeusb-ng (0.2.10-1kaisen) kaisen-packages; urgency=medium
 
   * Import 0.2.10 version

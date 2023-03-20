@@ -1,7 +1,7 @@
 Author: Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>
 
---- woeusb-ng-0.2.9.orig/miscellaneous/com.github.woeusb.woeusb-ng.policy
-+++ woeusb-ng-0.2.9/miscellaneous/com.github.woeusb.woeusb-ng.policy
+--- woeusb-ng-0.2.12.orig/miscellaneous/com.github.woeusb.woeusb-ng.policy
++++ woeusb-ng-0.2.12/miscellaneous/com.github.woeusb.woeusb-ng.policy
 @@ -7,14 +7,8 @@ DOC: https://www.freedesktop.org/softwar
  
  	<action id="com.github.slacka.woeusb.run-gui-using-pkexec">
@@ -21,7 +21,7 @@ Author: Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>
  			<allow_active>auth_admin_keep</allow_active>
  		</defaults>
  		
--		<annotate key="org.freedesktop.policykit.exec.path">/usr/bin/woeusbgui</annotate>
+-		<annotate key="org.freedesktop.policykit.exec.path">/usr/local/bin/woeusbgui</annotate>
 +		<annotate key="org.freedesktop.policykit.exec.path">/usr/bin/woeusbgui-ng</annotate>
     		<annotate key="org.freedesktop.policykit.exec.allow_gui">true</annotate>
  	</action>

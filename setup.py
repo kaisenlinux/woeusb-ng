@@ -42,13 +42,13 @@ class PostInstallCommand(install):
     """Post-installation for installation mode."""
 
     def run(self):
-        #post_install()
+        post_install()
         install.run(self)
 
 
 setup(
     name='WoeUSB-ng',
-    version='0.2.10',
+    version='0.2.12',
     description='WoeUSB-ng is a simple tool that enable you to create your own usb stick windows installer from an iso image or a real DVD. This is a rewrite of original WoeUSB. ',
     long_description=long_description,
     long_description_content_type='text/markdown',
@@ -61,7 +61,6 @@ setup(
     include_package_data=True,
     scripts=[
         'WoeUSB/woeusb',
-        'WoeUSB/woeusbgui',
     ],
     install_requires=[
         'termcolor',
