@@ -1,3 +1,12 @@
+woeusb-ng (0.2.12-2kaisen) kaisen-packages; urgency=medium
+
+  * Bump the Standards-Version field
+  * Use polkitd instead of policykit-1
+  * Remove unnecessary packages for build
+  * Improve debian/rules instructions
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Mon, 12 Aug 2024 15:37:08 +0200
+
 woeusb-ng (0.2.12-1kaisen) kaisen-packages; urgency=medium
 
   * Import the 0.2.12 version

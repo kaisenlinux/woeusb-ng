@@ -3,8 +3,7 @@
 %:
 	dh $@ --with python3 --buildsystem=pybuild
 
-override_dh_auto_install:
-	dh_auto_install
+execute_after_dh_auto_install:
 	rm -rf $(CURDIR)/debian/woeusb-ng/usr/share/applications/
 	mv $(CURDIR)/debian/woeusb-ng/usr/bin/woeusb $(CURDIR)/debian/woeusb-ng/usr/bin/woeusb-ng
-	cp $(CURDIR)/debian/woeusb-ng/usr/lib/python3.11/dist-packages/WoeUSB/woeusbgui $(CURDIR)/debian/woeusb-ng/usr/bin/woeusbgui-ng
+	cp $(CURDIR)/debian/woeusb-ng/usr/lib/python3.*/dist-packages/WoeUSB/woeusbgui $(CURDIR)/debian/woeusb-ng/usr/bin/woeusbgui-ng

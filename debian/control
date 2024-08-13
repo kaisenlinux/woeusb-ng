@@ -7,13 +7,7 @@ Build-Depends: debhelper-compat (= 13),
 	       dh-virtualenv,
 	       python3,
 	       python3-dev,
-               git,
-	       p7zip-full,
-               python3-pip,
-               python3-wxgtk4.0,
-               grub2-common,
-               grub-pc-bin,
-Standards-Version: 4.6.0
+Standards-Version: 4.7.2
 Homepage: https://github.com/WoeUSB/WoeUSB-ng
 Vcs-Browser: https://gitlab.com/kaisenlinux/packages/woeusb-ng
 Vcs-Git: https://gitlab.com/kaisenlinux/packages/woeusb-ng.git
@@ -33,7 +27,7 @@ Depends: ${shlibs:Depends},
          gettext,
          ntfs-3g,
          parted,
-         policykit-1,
+         polkitd,
          coreutils,
          wget,
          libc6,
